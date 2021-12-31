@@ -1,0 +1,4 @@
+outs:
+- md5: 40085d42a838176da14a68abab2ef62c
+  size: 760090
+  path: movie.csv
