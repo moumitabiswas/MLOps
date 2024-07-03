@@ -1,4 +1,4 @@
-Name: Python Application Test with Github
+name: Python Application Test with Github
 on: [push]
 jobs: 
   build:
@@ -6,21 +6,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - users: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Set Up Python 3.8
         uses: actions/setup-python@v1
         with: 
           python-version: 3.8
       - name: Install dependencies
         run: |
-          make instll
+          make install
       - name: lint
         run: |
           make lint
-      - name: Test with Pytest
+      - name: Test with pytest
         run: |
           make test
-      - name: Format
+      - name: format
         run: |
           make format
     
